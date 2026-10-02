@@ -3,7 +3,8 @@
 Simple turntable-style CD player. Put in CD, start playing audio.
 
 ## Usage instructions
-Run CDplayer.sh. Inserting a CD into the drive will start playback.
+Run `install.sh` from this directory to copy udev and service scripts to the proper locations. `install.sh` should be run from the user you intend to run the CD Player service.
+Udev rules will trigger playing a CD on insertion, and stop playback on ejection.
 
 ## Requirements
 - Raspberry Pi 3 B+ running raspbian (or similar variant at your own risk)

@@ -1,0 +1,8 @@
+[Unit]
+Description=Play audio from a CD
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=mplayer -msglevel all=4 -cache 8192 -cache-min 60 cdda:// /dev/cdrom
+Restart=no

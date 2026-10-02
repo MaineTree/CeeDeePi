@@ -1,0 +1,2 @@
+# Trigger play audio script on CD insertion
+ACTION=="change", SUBSYSTEM=="block", KERNEL=="sr*", ENV{ID_CDROM_MEDIA_CD}=="1", RUN+="/lib/udev/scripts/startplaycdservice.sh"
